@@ -31,7 +31,7 @@ const config = {
     "^~/server/(.*)$",
     "^~/data/(.*)$",
     "",
-    "^~/layout/ui/(.*)$",
+    "^~/layout/primitives/(.*)$",
     "^~/layout/(.*)$",
     "^~/styles/(.*)$",
     "^~/tests/(.*)$",

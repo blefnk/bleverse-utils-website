@@ -1,10 +1,10 @@
 import { Github, Twitter } from "lucide-react";
 
-import { REPOSITORY_URL } from "~/constants/repository-info";
-import { getScopedI18n } from "~/lib/next-international/server";
-import { typography } from "~/styles/typography";
+import { REPOSITORY_URL } from "~/app";
+import { getScopedI18n } from "~/utils/server/i18n";
+import { typography } from "~/utils/server/text";
 
-import { Button } from "../ui/button";
+import { Button } from "../primitives/button";
 
 export async function Footer() {
   const t = await getScopedI18n("islands");

@@ -1,8 +1,8 @@
 import { cnBase } from "tailwind-variants";
 
-import type { GenerateMetadata } from "~/@types/metadata";
-import { getScopedI18n } from "~/lib/next-international/server";
-import { typography } from "~/styles/typography";
+import type { GenerateMetadata } from "~/utils/types/metadata";
+import { getScopedI18n } from "~/utils/server/i18n";
+import { typography } from "~/utils/server/text";
 
 import { Morse } from "./morse";
 

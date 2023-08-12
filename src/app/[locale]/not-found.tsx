@@ -3,10 +3,10 @@ import { Balancer } from "react-wrap-balancer";
 import { ChevronLeft } from "lucide-react";
 import Link from "next/link";
 
-import { Button } from "~/islands/ui/button";
-import { ThemeProvider } from "~/contexts/providers";
-import { getScopedI18n } from "~/lib/next-international/server";
-import { typography } from "~/styles/typography";
+import { Button } from "~/islands/primitives/button";
+import { ThemeProvider } from "~/islands/contexts/providers";
+import { getScopedI18n } from "~/utils/server/i18n";
+import { typography } from "~/utils/server/text";
 
 export default async function NotFound() {
   const t = await getScopedI18n("pages.not-found");

@@ -6,11 +6,11 @@ import { Circle, File, Laptop, Moon, Search, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 import { useRouter } from "next/navigation";
 
-import { navItems } from "~/constants/nav-items";
+import { navItems } from "~/utils/server/links";
 import { useHotkeys } from "~/hooks/use-hotkeys";
-import { useI18n, useScopedI18n } from "~/lib/next-international/client";
+import { useI18n, useScopedI18n } from "~/utils/client/i18n";
 
-import { Button } from "../ui/button";
+import { Button } from "../primitives/button";
 import {
   CommandDialog,
   CommandEmpty,
@@ -19,7 +19,7 @@ import {
   CommandItem,
   CommandList,
   CommandSeparator,
-} from "../ui/command";
+} from "../primitives/command";
 
 type RouteHref = never;
 

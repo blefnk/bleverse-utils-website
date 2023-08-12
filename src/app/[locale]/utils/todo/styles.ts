@@ -1,6 +1,6 @@
 import { tv } from "tailwind-variants";
 
-import { typography } from "~/styles/typography";
+import { typography } from "~/utils/server/text";
 
 export const TodoListStyles = {
   Title: tv({

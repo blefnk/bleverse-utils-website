@@ -4,10 +4,10 @@ import { Download, Twitter } from "lucide-react";
 import { QRCodeCanvas } from "qrcode.react";
 
 import { WhatsApp } from "~/islands/icons/whatsapp";
-import { Button } from "~/islands/ui/button";
-import { Input } from "~/islands/ui/input";
+import { Button } from "~/islands/primitives/button";
+import { Input } from "~/islands/primitives/input";
 import { useURLState } from "~/hooks/use-url-state";
-import { useScopedI18n } from "~/lib/next-international/client";
+import { useScopedI18n } from "~/utils/client/i18n";
 
 export function QRCode() {
   const [value, setValue] = useURLState("value");

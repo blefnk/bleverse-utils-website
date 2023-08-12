@@ -5,11 +5,11 @@ import { Clock, Code, DollarSign, Files, QrCode, Text } from "lucide-react";
 import Link from "next/link";
 import { cnBase } from "tailwind-variants";
 
-import { Button } from "~/islands/ui/button";
-import { REPOSITORY_URL } from "~/constants/repository-info";
-import { getI18n, getScopedI18n } from "~/lib/next-international/server";
-import { typography } from "~/styles/typography";
-import { getGitHubStars } from "~/utils/get-github-stars";
+import { Button } from "~/islands/primitives/button";
+import { REPOSITORY_URL } from "~/app";
+import { getI18n, getScopedI18n } from "~/utils/server/i18n";
+import { typography } from "~/utils/server/text";
+import { getGitHubStars } from "~/utils/server/stars";
 
 type FeatureCardProps = {
   title: string;

@@ -1,4 +1,4 @@
-import "./src/constants/env.mjs";
+await import("./src/utils/server/appts/env.mjs");
 
 /** @type {import('next').NextConfig} */
 const config = {
@@ -13,9 +13,9 @@ const config = {
   experimental: {
     // typedRoutes: process.env.NODE_ENV === "development",
   },
+  // @ts-ignore
   webpack: (config) => {
     config.resolve.fallback = { fs: false };
-
     return config;
   },
 };

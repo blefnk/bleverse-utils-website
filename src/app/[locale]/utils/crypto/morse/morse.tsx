@@ -4,10 +4,10 @@ import { useState } from "react";
 
 import { decode, encode } from "morsee";
 
-import { Button } from "~/islands/ui/button";
-import { Label } from "~/islands/ui/label";
-import { Textarea } from "~/islands/ui/textarea";
-import { useScopedI18n } from "~/lib/next-international/client";
+import { Button } from "~/islands/primitives/button";
+import { Label } from "~/islands/primitives/label";
+import { Textarea } from "~/islands/primitives/textarea";
+import { useScopedI18n } from "~/utils/client/i18n";
 
 export function Morse() {
   const [text, setText] = useState("");

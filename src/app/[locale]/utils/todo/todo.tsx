@@ -7,10 +7,10 @@ import { Loader, PlusIcon } from "lucide-react";
 import dynamic from "next/dynamic";
 import { z } from "zod";
 
-import { Button } from "~/islands/ui/button";
-import { Input } from "~/islands/ui/input";
+import { Button } from "~/islands/primitives/button";
+import { Input } from "~/islands/primitives/input";
 import { useLocalStorage } from "~/hooks/use-local-storage";
-import { useScopedI18n } from "~/lib/next-international/client";
+import { useScopedI18n } from "~/utils/client/i18n";
 
 const TodoList = dynamic(
   async () => {

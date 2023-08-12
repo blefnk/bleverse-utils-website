@@ -4,7 +4,7 @@ import { Editor, type EditorProps } from "@monaco-editor/react";
 import { Loader } from "lucide-react";
 import { useTheme } from "next-themes";
 
-import { TextareaStyles } from "../ui/textarea";
+import { TextareaStyles } from "../primitives/textarea";
 
 export const EDITOR_OPTIONS: EditorProps["options"] = {
   cursorBlinking: "smooth",

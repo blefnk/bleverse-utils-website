@@ -3,11 +3,11 @@
 import { useState } from "react";
 
 import { CopyButton } from "~/islands/common/copy-button";
-import { Button } from "~/islands/ui/button";
+import { Button } from "~/islands/primitives/button";
 import { useHotkeys } from "~/hooks/use-hotkeys";
-import { useScopedI18n } from "~/lib/next-international/client";
-import { typography } from "~/styles/typography";
-import { convertHexToHSL, convertHexToRGB } from "~/utils/convert-colors";
+import { useScopedI18n } from "~/utils/client/i18n";
+import { typography } from "~/utils/server/text";
+import { convertHexToHSL, convertHexToRGB } from "~/utils/server/colors";
 
 export function RandomColor() {
   const t = useScopedI18n("pages.tools.random-color");

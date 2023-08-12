@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 import appts from "~/app";
-import { Globe, Home, Mic } from "lucide-react";
+import { Globe, Home, Mic, ListMusic, Combine } from "lucide-react";
 
 import {
   Menubar,
@@ -45,12 +45,20 @@ export function UnifiedItemBleverseNav() {
       </MenubarTrigger>
       <MenubarContent>
         <MenubarLink href="/">
-          Go to Home Page <MenubarShortcut>⌘Y</MenubarShortcut>
+          Home {"->"} <MenubarShortcut>⌘Y</MenubarShortcut>
         </MenubarLink>
         <MenubarSeparator />
-        <MenubarLabel>Bleverse Spaces</MenubarLabel>
+        <MenubarLabel>Bleverse Apps</MenubarLabel>
         <UnifiedSubCommunity />
         <UnifiedSubStudio />
+        <MenubarSeparator />
+        <MenubarLabel>More Bleverse Apps</MenubarLabel>
+        <MenubarLink href="https://utils.bleverse.com/">
+          Web Utilities Collection
+        </MenubarLink>
+        <MenubarLink href="https://relivator.bleverse.com/">
+          Relivator Next.js Starter
+        </MenubarLink>
       </MenubarContent>
     </MenubarMenu>
   );
@@ -117,12 +125,12 @@ export function UnifiedItemGeneral() {
 export function UnifiedItemUtils() {
   return (
     <MenubarMenu>
-      <MenubarTrigger className="relative">Utils</MenubarTrigger>
+      <MenubarTrigger className="relative">Tools</MenubarTrigger>
       <MenubarContent forceMount>
         <MenubarLink href="/">
           <span className="flex items-baseline">
             <Home className="mr-1 h-3 w-3" />
-            Utils Home {"->"}
+            Bleverse Utils {"->"}
           </span>
         </MenubarLink>
         <MenubarSeparator />
@@ -180,7 +188,10 @@ export function UnifiedItemGithub() {
 export function UnifiedSubCommunity() {
   return (
     <MenubarSub>
-      <MenubarSubTrigger>Community</MenubarSubTrigger>
+      <MenubarSubTrigger className="flex">
+        <Combine className="mr-1 h-4 w-4" />
+        Community
+      </MenubarSubTrigger>
       <MenubarSubContent className="w-[160px] md:w-[180px] lg:w-[200px]">
         <MenubarSub>
           <MenubarSubTrigger>Socials...</MenubarSubTrigger>
@@ -272,7 +283,10 @@ export function UnifiedSubCommunity() {
 export function UnifiedSubStudio() {
   return (
     <MenubarSub>
-      <MenubarSubTrigger>MF Studio</MenubarSubTrigger>
+      <MenubarSubTrigger className="flex">
+        <ListMusic className="mr-1 h-4 w-4" />
+        MF Studio
+      </MenubarSubTrigger>
       <MenubarSubContent className="w-[160px] md:w-[180px] lg:w-[200px]">
         <MenubarSub>
           <MenubarSubTrigger>Socials...</MenubarSubTrigger>

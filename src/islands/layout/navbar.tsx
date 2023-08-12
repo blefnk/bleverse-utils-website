@@ -2,12 +2,12 @@ import { Github, Twitter, ActivitySquare } from "lucide-react";
 import Link from "next/link";
 import { type VariantProps, tv } from "tailwind-variants";
 
-import { getScopedI18n } from "~/lib/next-international/server";
+import { getScopedI18n } from "~/utils/server/i18n";
 
 import { CommandMenu } from "../common/command-menu";
 import { MainNav } from "../common/main-nav";
 import { ThemeToggler } from "../common/theme-toggler";
-import { Button } from "../ui/button";
+import { Button } from "../primitives/button";
 
 const NavbarStyles = tv({
   base: "w-full border-b border-transparent bg-background/95 backdrop-blur-sm animate-in fade-in slide-in-from-top-full duration-slow",

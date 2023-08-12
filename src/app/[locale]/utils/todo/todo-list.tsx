@@ -2,8 +2,8 @@
 
 import { Trash } from "lucide-react";
 
-import { Button } from "~/islands/ui/button";
-import { Checkbox } from "~/islands/ui/checkbox";
+import { Button } from "~/islands/primitives/button";
+import { Checkbox } from "~/islands/primitives/checkbox";
 
 import { TodoListStyles } from "./styles";
 import { type Todo } from "./todo";

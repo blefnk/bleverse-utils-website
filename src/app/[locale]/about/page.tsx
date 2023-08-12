@@ -2,10 +2,10 @@ import { Balancer } from "react-wrap-balancer";
 
 import { cnBase } from "tailwind-variants";
 
-import type { GenerateMetadata } from "~/@types/metadata";
-import { REPOSITORY_URL } from "~/constants/repository-info";
-import { getScopedI18n } from "~/lib/next-international/server";
-import { typography } from "~/styles/typography";
+import type { GenerateMetadata } from "~/utils/types/metadata";
+import { REPOSITORY_URL } from "~/app";
+import { getScopedI18n } from "~/utils/server/i18n";
+import { typography } from "~/utils/server/text";
 
 export const generateMetadata: GenerateMetadata = async () => {
   const t = await getScopedI18n("pages.about");

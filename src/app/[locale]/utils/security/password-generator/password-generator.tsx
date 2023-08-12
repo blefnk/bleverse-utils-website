@@ -5,13 +5,13 @@ import { useCallback, useEffect, useState } from "react";
 import { RefreshCw } from "lucide-react";
 
 import { CopyButton } from "~/islands/common/copy-button";
-import { Button } from "~/islands/ui/button";
-import { Checkbox } from "~/islands/ui/checkbox";
-import { Input } from "~/islands/ui/input";
-import { Label } from "~/islands/ui/label";
-import { Slider } from "~/islands/ui/slider";
+import { Button } from "~/islands/primitives/button";
+import { Checkbox } from "~/islands/primitives/checkbox";
+import { Input } from "~/islands/primitives/input";
+import { Label } from "~/islands/primitives/label";
+import { Slider } from "~/islands/primitives/slider";
 import { useIds } from "~/hooks/use-ids";
-import { useScopedI18n } from "~/lib/next-international/client";
+import { useScopedI18n } from "~/utils/client/i18n";
 
 function getCharacters(
   includeUppercase: boolean,
@@ -85,6 +85,7 @@ export function PasswordGenerator() {
         <p>{t("length", { length })}</p>
         <Slider
           value={[length]}
+          // @ts-expect-error
           onValueChange={([value]) => setLength(value)}
           min={4}
           max={128}

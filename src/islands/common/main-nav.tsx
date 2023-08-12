@@ -2,10 +2,10 @@
 
 import Link from "next/link";
 
-import { REPOSITORY_URL } from "~/constants/repository-info";
-import { useI18n } from "~/lib/next-international/client";
+import { REPOSITORY_URL } from "~/app";
+import { useI18n } from "~/utils/client/i18n";
 
-import { useToast } from "../ui/toast/use-toast";
+import { useToast } from "../primitives/toast/use-toast";
 
 export function MainNav() {
   const { toast } = useToast();

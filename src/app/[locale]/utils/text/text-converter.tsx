@@ -3,12 +3,12 @@
 import { useRef } from "react";
 
 import { CopyButton } from "~/islands/common/copy-button";
-import { Button } from "~/islands/ui/button";
-import { Label } from "~/islands/ui/label";
-import { Switch } from "~/islands/ui/switch";
-import { Textarea } from "~/islands/ui/textarea";
-import { useToast } from "~/islands/ui/toast/use-toast";
-import { useI18n, useScopedI18n } from "~/lib/next-international/client";
+import { Button } from "~/islands/primitives/button";
+import { Label } from "~/islands/primitives/label";
+import { Switch } from "~/islands/primitives/switch";
+import { Textarea } from "~/islands/primitives/textarea";
+import { useToast } from "~/islands/primitives/toast/use-toast";
+import { useI18n, useScopedI18n } from "~/utils/client/i18n";
 
 export function TextConverter() {
   const textareaRef = useRef<HTMLTextAreaElement>(null);

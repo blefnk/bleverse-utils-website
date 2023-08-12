@@ -2,11 +2,11 @@
 
 import { useMemo, useState } from "react";
 
-import { Button } from "~/islands/ui/button";
+import { Button } from "~/islands/primitives/button";
 import { useHotkeys } from "~/hooks/use-hotkeys";
 import { useInterval } from "~/hooks/use-interval";
 import { useOnMount } from "~/hooks/use-on-mount";
-import { useScopedI18n } from "~/lib/next-international/client";
+import { useScopedI18n } from "~/utils/client/i18n";
 
 export function Stopwatch() {
   const t = useScopedI18n("pages.tools.stopwatch");

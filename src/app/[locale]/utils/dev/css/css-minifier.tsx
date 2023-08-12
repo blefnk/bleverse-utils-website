@@ -7,9 +7,9 @@ import { Loader } from "lucide-react";
 
 import { CodeEditor } from "~/islands/common/code-editor";
 import { CopyButton } from "~/islands/common/copy-button";
-import { Button } from "~/islands/ui/button";
-import { useToast } from "~/islands/ui/toast/use-toast";
-import { useI18n, useScopedI18n } from "~/lib/next-international/client";
+import { Button } from "~/islands/primitives/button";
+import { useToast } from "~/islands/primitives/toast/use-toast";
+import { useI18n, useScopedI18n } from "~/utils/client/i18n";
 
 export function CssMinifier() {
   const [input, setInput] = useState("");

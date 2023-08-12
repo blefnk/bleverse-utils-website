@@ -2,10 +2,10 @@
 
 import { useState } from "react";
 
-import { Input } from "~/islands/ui/input";
+import { Input } from "~/islands/primitives/input";
 import { useClipboard } from "~/hooks/use-clipboard";
-import { typography } from "~/styles/typography";
-import { convertHexToHSL, convertHexToRGB } from "~/utils/convert-colors";
+import { typography } from "~/utils/server/text";
+import { convertHexToHSL, convertHexToRGB } from "~/utils/server/colors";
 
 export function ColorPicker() {
   const [color, setColor] = useState("#000000");

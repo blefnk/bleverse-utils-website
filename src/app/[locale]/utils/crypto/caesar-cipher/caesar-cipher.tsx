@@ -2,16 +2,17 @@
 
 import { useState } from "react";
 
-import { Button } from "~/islands/ui/button";
-import { Input } from "~/islands/ui/input";
-import { Label } from "~/islands/ui/label";
-import { Textarea } from "~/islands/ui/textarea";
-import { useToast } from "~/islands/ui/toast/use-toast";
-import { useI18n, useScopedI18n } from "~/lib/next-international/client";
+import { Button } from "~/islands/primitives/button";
+import { Input } from "~/islands/primitives/input";
+import { Label } from "~/islands/primitives/label";
+import { Textarea } from "~/islands/primitives/textarea";
+import { useToast } from "~/islands/primitives/toast/use-toast";
+import { useI18n, useScopedI18n } from "~/utils/client/i18n";
 
 function cipher(chunk: Uint8Array, key: number) {
   const transformedChunk = new Uint8Array(chunk.length);
   for (let i = 0; i < chunk.length; i++) {
+    // @ts-expect-error
     transformedChunk[i] = chunk[i] + (key % 26);
   }
   return transformedChunk;

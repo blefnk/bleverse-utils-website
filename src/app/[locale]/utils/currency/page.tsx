@@ -1,11 +1,11 @@
 import ky from "ky";
 import { tv } from "tailwind-variants";
 
-import type { GenerateMetadata } from "~/@types/metadata";
-import { Currency } from "~/constants/currency";
-import { env } from "~/constants/env.mjs";
-import { getScopedI18n } from "~/lib/next-international/server";
-import { typography } from "~/styles/typography";
+import type { GenerateMetadata } from "~/utils/types/metadata";
+import { Currency } from "~/utils/server/currency";
+import { env } from "~/utils/server/appts/env.mjs";
+import { getScopedI18n } from "~/utils/server/i18n";
+import { typography } from "~/utils/server/text";
 
 import { CurrencyConverter } from "./currency-converter";
 

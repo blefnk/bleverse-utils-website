@@ -2,9 +2,9 @@
 
 import { useState } from "react";
 
-import { Label } from "~/islands/ui/label";
-import { Textarea } from "~/islands/ui/textarea";
-import { useScopedI18n } from "~/lib/next-international/client";
+import { Label } from "~/islands/primitives/label";
+import { Textarea } from "~/islands/primitives/textarea";
+import { useScopedI18n } from "~/utils/client/i18n";
 
 function isBinary(string: string) {
   const pattern = /^[01]*$/;

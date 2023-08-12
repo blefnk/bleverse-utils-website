@@ -9,10 +9,10 @@ import {
   ComboboxContent,
   ComboboxList,
   ComboboxTrigger,
-} from "~/islands/ui/combobox";
-import { Input } from "~/islands/ui/input";
-import { Currency, currencies } from "~/constants/currency";
-import { useScopedI18n } from "~/lib/next-international/client";
+} from "~/islands/primitives/combobox";
+import { Input } from "~/islands/primitives/input";
+import { Currency, currencies } from "~/utils/server/currency";
+import { useScopedI18n } from "~/utils/client/i18n";
 
 import { CurrencyResponse } from "./page";
 

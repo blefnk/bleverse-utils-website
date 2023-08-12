@@ -3,15 +3,15 @@
 import { Check, Copy } from "lucide-react";
 import { cnBase } from "tailwind-variants";
 
-import { Button, type ButtonProps } from "~/islands/ui/button";
+import { Button, type ButtonProps } from "~/islands/primitives/button";
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "~/islands/ui/tooltip";
+} from "~/islands/primitives/tooltip";
 import { useClipboard } from "~/hooks/use-clipboard";
-import { useScopedI18n } from "~/lib/next-international/client";
+import { useScopedI18n } from "~/utils/client/i18n";
 
 type CopyButtonProps = ButtonProps & {
   valueToCopy: string;
